@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DJ Packages</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #070707;
+            color: white;
+        }
+
+        nav {
+            background: #111;
+            padding: 18px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #00ffff;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px 30px;
+        }
+
+        header h1 {
+            color: #00ffff;
+            font-size: 42px;
+            text-shadow: 0 0 15px #00ffff;
+        }
+
+        header p {
+            margin-top: 15px;
+            color: #bbb;
+        }
+
+        .packages {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            padding: 30px;
+        }
+
+        .package {
+            width: 300px;
+            background: #151515;
+            border-radius: 18px;
+            padding: 30px;
+            text-align: center;
+            border: 1px solid #333;
+        }
+
+        .package h2 {
+            color: #ff00ff;
+        }
+
+        .price {
+            font-size: 32px;
+            color: #00ffff;
+            margin: 20px;
+        }
+
+        .package p {
+            line-height: 2;
+            color: #ddd;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            border-radius: 25px;
+            background: linear-gradient(45deg,#ff00cc,#3333ff);
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">🏠 Home</a>
+    <a href="menu.html">🎛️ Menu</a>
+    <a href="payment.html">💳 Booking / Payment</a>
+</nav>
+
+<header>
+    <h1>🎛️ DJ Packages</h1>
+    <p>Choose the perfect package for your event</p>
+</header>
+
+<section class="packages">
+
+    <div class="package">
+        <h2>Basic Party</h2>
+
+        <div class="price">₹5,000</div>
+
+        <p>
+            🔊 Sound System<br>
+            🎧 DJ Setup<br>
+            💡 Basic Lights<br>
+            🎤 1 Microphone<br>
+            ⏱️ 4 Hours
+        </p>
+
+        <a href="payment.html" class="btn">Book Package</a>
+    </div>
+
+    <div class="package">
+        <h2>Premium Party</h2>
+
+        <div class="price">₹10,000</div>
+
+        <p>
+            🔊 Powerful Sound<br>
+            🎧 Professional DJ<br>
+            💡 LED Lights<br>
+            🔥 Moving Head Lights<br>
+            🎤 2 Microphones<br>
+            ⏱️ 6 Hours
+        </p>
+
+        <a href="payment.html" class="btn">Book Package</a>
+    </div>
+
+    <div class="package">
+        <h2>Wedding Special</h2>
+
+        <div class="price">₹20,000</div>
+
+        <p>
+            🔊 Premium Sound<br>
+            🎧 Professional DJ<br>
+            💡 Full Lighting Setup<br>
+            🔥 Moving Heads<br>
+            ✨ Laser Effects<br>
+            🎤 Wireless Mic<br>
+            ⏱️ 8 Hours
+        </p>
+
+        <a href="payment.html" class="btn">Book Package</a>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 DJ Light & Sounds</p>
+</footer>
+
+</body>
+</html>
