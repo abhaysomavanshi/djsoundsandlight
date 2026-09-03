@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Booking & Payment</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #080808;
+            color: white;
+        }
+
+        nav {
+            background: #111;
+            padding: 18px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 35px;
+            background: #151515;
+            border-radius: 20px;
+            border: 1px solid #333;
+            box-shadow: 0 0 25px rgba(255,0,255,.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: #00ffff;
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 7px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 13px;
+            border: none;
+            border-radius: 8px;
+            background: #252525;
+            color: white;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 14px;
+            margin-top: 25px;
+            border: none;
+            border-radius: 25px;
+            color: white;
+            font-weight: bold;
+            background: linear-gradient(45deg,#ff00cc,#3333ff);
+            cursor: pointer;
+        }
+
+        .payment {
+            margin-top: 30px;
+            padding: 20px;
+            background: #0e0e0e;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .payment h2 {
+            color: #ff00ff;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">🏠 Home</a>
+    <a href="menu.html">🎛️ Menu</a>
+    <a href="payment.html">💳 Booking / Payment</a>
+</nav>
+
+<div class="container">
+
+    <h1>🎉 Book DJ Service</h1>
+
+    <form onsubmit="bookNow(event)">
+
+        <label>Your Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label>Mobile Number</label>
+        <input type="tel" id="phone" placeholder="Enter mobile number" required>
+
+        <label>Select Package</label>
+
+        <select id="package" required>
+            <option value="">Select Package</option>
+            <option>Basic Party - ₹5,000</option>
+            <option>Premium Party - ₹10,000</option>
+            <option>Wedding Special - ₹20,000</option>
+        </select>
+
+        <label>Event Date</label>
+        <input type="date" id="date" required>
+
+        <label>Event Location</label>
+        <input type="text" id="location" placeholder="Enter event location" required>
+
+        <button class="btn" type="submit">
+            Confirm Booking
+        </button>
+
+    </form>
+
+    <div class="payment">
+
+        <h2>💳 Payment</h2>
+
+        <p>Booking confirmed झाल्यानंतर payment details येथे दाखवू शकतो.</p>
+
+        <br>
+
+        <p><b>UPI ID:</b> yourupi@upi</p>
+
+        <p><b>Advance:</b> ₹1,000</p>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 DJ Light & Sounds</p>
+</footer>
+
+<script>
+
+function bookNow(event) {
+
+    event.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let packageName = document.getElementById("package").value;
+    let date = document.getElementById("date").value;
+
+    alert(
+        "🎉 Booking Request Submitted!\n\n" +
+        "Name: " + name +
+        "\nPackage: " + packageName +
+        "\nEvent Date: " + date
+    );
+
+}
+
+</script>
+
+</body>
+</html>
